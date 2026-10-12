@@ -1,21 +1,16 @@
-x = 1
+x = float(input("zadej čas: "))
 
 if x<0:
     print("Hodina nemůže být záporná")
- else:24:
-print("Zadávejte platné hodiny")
- elif 
-        print("Noc")
- elif x<9:
-        print("Ráno")
- elif x<12:
-        print("Dopoledne")
-
-
-
-    
-
-
-
-
-
+elif x>24:
+    print("Zadavejte platne hodiny")
+elif x<6:
+    print("Je noc")
+elif x<10:
+    print("Je ráno")
+elif x<12:
+    print("Je dopoledne")
+elif x<19:
+    print("Je odpoledne")
+elif x>18:
+    print("Je noc")
