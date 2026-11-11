@@ -20,5 +20,6 @@ while mistnost <= pocet_mistnosti:
     b = int(input("zadej stranu \"b\":"))
     obsah += spocitej_obsah(a, b)
     mistnost += 1
+print(f"Celková výměra bytu je {obsah}")
 
 
