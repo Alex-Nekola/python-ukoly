@@ -16,10 +16,12 @@ obsah = 0  # proměnná pro celkovou výměru bytu
 while mistnost <= pocet_mistnosti:
     print(f"Zadej rozměry {mistnost}. mistnosti")
     a = int(input("zadej stranu 'a':"))
-#   a = int(input("zadej stranu \"a\":")) 
+#    \"a"\ / 'a' jak zapsat "" do textu
     b = int(input("zadej stranu \"b\":"))
-    obsah += spocitej_obsah(a, b)
-    mistnost += 1
+    obsah_mistnosti += spocitej_obsah(a, b)
+    if obsah_mistnosti != None:
+        obsah += obsah_mistnosti
+        mistnost += 1
 print(f"Celková výměra bytu je {obsah}")
 
 
